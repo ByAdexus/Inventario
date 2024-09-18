@@ -1,40 +1,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  display: flex;
+  height: 100vh;
+  background: #f0f5fd;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left-seccion{
+  background: #fff;
+  width: 170px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  height: 100%;
+  padding: 25px 10px;
+  transition: all 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.left-seccion h2{
+  color: #364670;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-seccion .sidebar{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.left-seccion .sidebar .item,
+.left-seccion .sign-out {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #364670;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.left-seccion .sidebar .item.active h3,
+.left-seccion .sidebar .item.active i,
+.left-seccion .sidebar .item:hover,
+.left-seccion .sign-out:hover{
+  color: #1975d2;
+}
+
+.left-seccion .sidebar .item h3,
+.left-seccion .sign-out h3{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.left-seccion .sidebar .item i,
+.left-seccion .sign-out i{
+  font-size: 22px;
+}
+
+.main{
+  flex: 6;
+  padding: 25px;
+}
+
+.main .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main .header .search{
+  background: #fff;
+  display: flex;
+  align-items: center;
+  width: 75%;
+  padding: 8px 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(136, 148, 171, 0.2), 0 24px 20px -24px rgba(71, 82, 107, 0.1);
+}
+
+.main .header .search button{
+  font-size: 20px;
+  border: none;
+  background: transparent;
+}
+
+.main .header .search input{
+  padding: 4px 6px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.main .header .search i{
+  cursor: pointer;
+}
+
+.main .header .icon-btns{
+  display: flex;
+  gap: 8px;
+}
+
+.main .header .icon-btns i{
+  font-size: 20px;
+  background: #1976d2;
+  padding: 8px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.main .header .icon-btns i:hover{
+  background: #0d47a1;
 }
