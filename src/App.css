@@ -13,11 +13,12 @@ body {
 .container {
   display: flex;
   height: 100vh;
-  background: #f0f5fd;
+  background: rgba(227,237,249,255);
 }
 
+
 .left-seccion {
-  background: #fff;
+  background: #ffffff;
   width: 170px;
   display: flex;
   flex-direction: column;
@@ -315,6 +316,7 @@ body {
     cursor: pointer;
 }
 
+/*
 .right-section .widgets{
     display: flex;
     flex-direction: column;
@@ -443,11 +445,13 @@ body {
     font-size: 16px;
     line-height: 1.4rem;
 }
+    */
 
 @media screen and (max-width: 1230px) {
     
     .left-section{
         width: 90px;
+        display: flex;
     }
 
     .left-section h2{
@@ -520,4 +524,5 @@ body {
     }
 
 }
+
 

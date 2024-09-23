@@ -8,7 +8,7 @@ import Home from './Components/pages/home';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Home></Home>
+    <App></App>
   </React.StrictMode>
 );
 

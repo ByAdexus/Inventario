@@ -12,51 +12,12 @@ const Home = () => {
         referrerPolicy="no-referrer"
       />
 
-      {/* Left Section */}
-      <div className="left-seccion">
-        <div className="sidebar">
-          <h2>My Docs</h2>
-          <div className="item active">
-            <i className="ri-apps-line"></i>
-            <h3>Dashboard</h3>
-          </div>
-          <div className="item">
-            <i className="ri-folder-line"></i>
-            <h3>Your Files</h3>
-          </div>
-          <div className="item">
-            <i className="ri-hard-drive-3-line"></i>
-            <h3>Your Disks</h3>
-          </div>
-          <div className="item">
-            <i className="ri-folder-lock-line"></i>
-            <h3>Protected</h3>
-          </div>
-          <div className="item">
-            <i className="ri-star-line"></i>
-            <h3>Favorites</h3>
-          </div>
-          <div className="item">
-            <i className="ri-delete-bin-5-line"></i>
-            <h3>Trash</h3>
-          </div>
-          <div className="item">
-            <i className="ri-settings-3-line"></i>
-            <h3>Settings</h3>
-          </div>
-        </div>
-        <div className="sign-out">
-          <i className="ri-logout-box-r-line"></i>
-          <h3>Sign Out</h3>
-        </div>
-      </div>
-
       {/* Main Section */}
       <div className="main">
         <div className="header">
           <div className="search">
             <button><i className="ri-search-2-line"></i></button>
-            <input type="text" placeholder="Search" />
+            <input type="text" placeholder="Buscar" />
             <i className="ri-equalizer-line"></i>
           </div>
           <div className="icon-btns">

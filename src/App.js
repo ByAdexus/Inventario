@@ -1,27 +1,32 @@
-import logo from './logo.svg';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Components/pages/home";
+import Productos from "./Components/pages/productos";
+import Reportes from "./Components/pages/reportes";
+import Historial from "./Components/pages/historial";
+import Soporte from "./Components/pages/soporte";
+import LeftSectionNV from "./Components/LeftSectionNV";
+import Perfil from "./Components/perfil";
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app-container">
+        <LeftSectionNV />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/productos" element={<Productos />} />
+            <Route path="/reportes" element={<Reportes />} />
+            <Route path="/historial" element={<Historial />} />
+            <Route path="/soporte" element={<Soporte />} />
+          </Routes>
+        </div>
+        <Perfil></Perfil>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
