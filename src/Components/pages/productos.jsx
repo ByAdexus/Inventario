@@ -25,7 +25,7 @@ const Productos = () => {
             <i className="ri-menu-line" id="menu-btn"></i>
           </div>
         </div>
-        <h3 className="separator">Quick Access</h3>
+        <h3 className="separator">Categoria</h3>
 
         <div className="quick-access">
           <div className="item">

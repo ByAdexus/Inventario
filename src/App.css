@@ -26,18 +26,21 @@ body {
   height: 100%;
   padding: 25px 10px;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .left-seccion h2 {
   color: #364670;
   margin-bottom: 15px;
   text-align: center;
+  
 }
 
 .left-seccion .sidebar {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  
 }
 
 .left-seccion .sidebar .item,
@@ -48,6 +51,7 @@ body {
   color: #364670;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .left-seccion .sidebar .item.active h3,
@@ -524,5 +528,54 @@ body {
     }
 
 }
+
+/*Login*/
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espaciado entre los elementos del formulario */
+  background: #fff; /* Fondo blanco para el formulario */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(136, 148, 171, 0.2), 0 24px 20px -24px rgba(71, 82, 107, 0.1);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: #364670; /* Color del texto del label */
+  margin-bottom: 5px; /* Espaciado entre el label y el input */
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #1975d2; /* Color del borde al enfocar */
+}
+
+.login-button {
+  padding: 10px;
+  background: #1975d2; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover {
+  background: #0d47a1; /* Color de fondo del botón al pasar el mouse */
+}
+
 
 

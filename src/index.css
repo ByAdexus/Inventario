@@ -23,8 +23,9 @@ code {
 }
 
 .content {
-  flex: 1; /* Ocupa el espacio restante */
-
+  flex: 1;
+  padding: 25px 25px 15px 10px;
+  background: rgba(227,237,249,255)
 }
 
 
